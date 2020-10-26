@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@800&family=Oswald:wght@600&family=Roboto:wght@300;900&display=swap" rel="stylesheet");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet");
+
+#recipeDetailCard {
+    margin: 20px;
+    padding: 20px;
+    width: 900px;
+	margin-left: 200px;
+}
+
+
+
+#lpTitle {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+
+}
+
+#lpDescription {
+    text-decoration: none;
+    text-align: center;
+    color: black; 
+    font-family: 'Roboto', sans-serif;
+    
+
+}
+
+#recipeTitle {
+    text-align: center;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+#ingredients {
+    
+    color: black;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+#RPIngredients {
+    font-size: 27px;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding-top: 10px;
+
+}
+
+#RPMethod {
+    font-size: 25px;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#RPmethodDetails {
+    font-size: 15px;
+    color: black;
+
+    font-family: 'Roboto', sans-serif;
+    padding-right: 10px;
+}
+
+#theGoudaFather {
+    font-family: 'Oswald', sans-serif;
+    padding-left: 40px;
+    font-size: 40px;
+    
+    
+    
+}
+
+#CheeseIsLife {
+    font-family: 'Roboto', sans-serif;
+    padding-left: 100px;
+    font-size: 20px;
+    
+}
+
+#hpDesciption {
+    text-decoration: none;
+    text-align: left;
+    color: black; 
+    font-family: 'Roboto', sans-serif;
+
+}
+
+

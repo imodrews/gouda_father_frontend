@@ -1,0 +1,38 @@
+
+
+
+body {
+	background-color: black;
+    
+}
+h1 {
+	padding-left: 5rem;
+}
+
+#blogJumbotron {
+	background-image: url(../images/Ratattouille.jpg);
+	width: 70rem;
+}
+
+#oldblogbutton {
+	width: 20rem;
+	height: 15%;
+}
+
+#detailBody{
+	color: whitesmoke;
+}
+
+#blogPreviewCards {
+	display: flex;
+	flex-direction: row;
+	
+	width: 5rem;
+}
+#blogPreviewCard{
+	width: 20rem;
+}
+#oldBlogCard{
+	width: 20rem;
+	padding: none;
+}

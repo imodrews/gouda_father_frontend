@@ -1,0 +1,157 @@
+* {
+	box-sizing: content-box;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+	
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+		
+}
+
+/* Cards and Card Groups*/
+#homepageCards {
+	max-width: 14rem;
+	border-radius: 2px;
+	height: 24rem;
+	float: center;
+	height: 22rem; 
+
+	margin: 1rem;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+		0 1px 2px rgba(0, 0, 0, 0.24);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+		0 1px 2px rgba(0, 0, 0, 0.24);
+	-ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	-o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
+#homepageCards:hover {
+	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+		0 6px 6px rgba(0, 0, 0, 0.23);
+	-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+		0 6px 6px rgba(0, 0, 0, 0.23);
+	-ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+		0 6px 6px rgba(0, 0, 0, 0.23);
+	-o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+		0 6px 6px rgba(0, 0, 0, 0.23);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#cardlink {
+	text-decoration: none;
+	color: black;
+}
+
+#cardgroup {
+	justify-content: space-around;
+}
+
+.badge {
+	margin: 0.1rem;
+	padding: 0px;
+}
+
+.footer {
+	margin-top: 1rem;
+}
+
+/* Style Components*/
+
+/* Style Navigation */
+#navmenu {
+	text-decoration: none;
+	justify-content: space-between;
+	margin: 1rem;
+	color: white;
+}
+
+/* Style Jumbotron*/
+.jumbotron {
+	color: white;
+	height: 20rem;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#homePageJumbotron {
+	background-image: url(./images/goudafather.jpg);
+}
+#blogJumbotron {
+	background-image: url(./images/Ratattouille.jpg);
+	width: 70rem;
+}
+#authorsJumbotron {
+	background-image: url(./images/neon.jpg);
+}
+
+/* Author Detail Card */
+.authorCard {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	margin: auto;
+	padding-bottom: 1rem;
+	text-align: center;
+}
+
+.authorCard img {
+	align-content: center;
+	justify-content: center;
+	max-width: 300px;
+}
+
+#socialbutton {
+	margin: 1rem;
+}
+
+.title {
+	color: grey;
+	font-size: 18px;
+}
+
+button:hover,
+a:hover {
+	opacity: 0.7;
+}
+
+h2 {
+	color: black;
+	text-align: center;
+}
+
+#recipeDetail {
+	width: 900px;
+	margin-left: 200px;
+}
+
+#blogPreviewCards {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+h3 {
+	color: black;
+	text-align: left;
+}
+
+#lpbutton {
+	margin: 10px 5px 20px 5px;
+
+}
