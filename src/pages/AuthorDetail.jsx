@@ -24,20 +24,20 @@ const AuthorDetail = ({ authors }) => {
 			</Jumbotron>
 			{authors.length >= 1 &&
 				authors
-					.filter((author) => author.fields.slug === slug)
+					.filter((author) => author.slug === slug)
 					.map((author) => (
 						<Container>
 							<div className="authorCard">
 								<img
-									src={`${author.fields.image.fields.file.url}`}
-									alt={`${author.fields.slug}`}
+									src={`${author.imageurl}`}
+									alt={`${author.slug}`}
 								/>
-								<h1>{author.fields.name}</h1>
-								<p className="title">{author.fields.title}</p>
-								<p>{author.fields.shortBio}</p>
+								<h1>{author.name}</h1>
+								<p className="title">{author.title}</p>
+								<p>{author.shortBio}</p>
 
 								<a
-									href={`https://www.linkedin.com/in/${author.fields.linkedIn}`}
+									href={`https://www.linkedin.com/in/${author.linkedIn}`}
 									target="_blank"
 								>
 									<FontAwesomeIcon
@@ -47,7 +47,7 @@ const AuthorDetail = ({ authors }) => {
 									/>
 								</a>
 								<a
-									href={`https://github.com/${author.fields.github}`}
+									href={`https://github.com/${author.github}`}
 									target="_blank"
 								>
 									<FontAwesomeIcon
@@ -56,7 +56,7 @@ const AuthorDetail = ({ authors }) => {
 										id="socialbutton"
 									/>
 								</a>
-								<a href={`mailto:${author.fields.email}`}>
+								<a href={`mailto:${author.email}`}>
 									<FontAwesomeIcon
 										icon={faEnvelope}
 										size="3x"

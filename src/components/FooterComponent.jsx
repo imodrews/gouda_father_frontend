@@ -8,6 +8,7 @@ import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 
 const FooterComponent = ({ authors }) => {
+		
 	return (
 		<Navbar className="footer" bg="light">
 			<Container>
@@ -17,14 +18,14 @@ const FooterComponent = ({ authors }) => {
 						authors.map((author, index) => (
 							<Link
 								key={index}
-								to={`/authors/${author.fields.slug}`}
+								to={`/authors/${author.slug}`}
 							>
 								<Button
 									variant="secondary"
 									key={index}
 									authors={authors}
 								>
-									{author.fields.name}
+									{author.name}
 								</Button>
 							</Link>
 						))}

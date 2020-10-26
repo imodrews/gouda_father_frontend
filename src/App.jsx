@@ -46,12 +46,10 @@ const App = () => {
 	
 	// get all persons (content_type = contentful) //
 	useEffect(() => {
-		client
-			.getEntries({ content_type: "person" })
-			.then((response) => {
-				setAuthors(response.items);
-			})
-			.catch((error) => console.log("ERROR"));
+		fetch('http://localhost:3000/api/authors')
+			.then((res) => res.json())
+			.then((data) => setAuthors(data))
+			.catch((error) => console.log("ERROR FETCHING DATA"));
 	}, []);
 
 	return (
