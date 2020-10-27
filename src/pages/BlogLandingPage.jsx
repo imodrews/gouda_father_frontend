@@ -10,10 +10,10 @@ import BlogEntryPreviews from "../components/BlogEntryPreviews";
 import OlderBlogs from "../components/OlderBlogs";
 
 const BlogLandingPage = ({ blogData }) => {
-
+console.log(blogData);
 const sortedPublishedDateArray =  blogData.sort(
-	(a, b) =>  new Date(b.fields.publishDate) - new Date(a.fields.publishDate)
-);
+	(a, b) =>  new Date(b.publishDate) - new Date(a.publishDate)
+); 
 
 const latestBlogPosts = sortedPublishedDateArray.slice(0, 3);
 const oldBlogPosts = sortedPublishedDateArray.slice(3, sortedPublishedDateArray.length);

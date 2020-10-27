@@ -13,26 +13,26 @@ const BlogEntryPreview = ({ preview, history }) => {
 		blogEntryImage,
 		author,
 		slug,
-	} = preview.fields;
+	} = preview;
 
 	return (
 		<Accordion defaultActiveKey="0">
 			<Card id="blogPreviewCard" text={"light" ? "dark" : "white"}>
 				<Accordion.Toggle as={Card.Header} eventKey="1">
-					<Card.Title> {title} </Card.Title>
-					<Card.Text> {publishDate} </Card.Text>
+					<Card.Title> {preview.title} </Card.Title>
+					<Card.Text> {preview.publishDate} </Card.Text>
 				</Accordion.Toggle>
 				<Card.Img
 					variant="top"
 					width="10rem"
 					height="14%"
-					src={blogEntryImage.fields.file.url}
+					src={preview.blogEntryImage}
 					alt="Card image cap"
 				/>
 				<Accordion.Collapse eventKey="1">
 					<Card.Body>
-						<Card.Text> {author.fields.name} </Card.Text>
-						<Card.Text> {blogShortDescription} </Card.Text>
+						<Card.Text> {preview.author} </Card.Text>
+						<Card.Text> {preview.blogShortDescription} </Card.Text>
 						<Link to={`/blog/${slug}`}>
 							<Button history={history}> Read Me! </Button>
 						</Link>
