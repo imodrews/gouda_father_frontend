@@ -16,27 +16,27 @@ const BlogDetail = ({ blogData }) => {
 		<Container id="detailBody">
 			{blogData.length >= 1 &&
 							blogData
-		.filter((newBlog) => newBlog.fields.slug === slug)
+		.filter((newBlog) => newBlog.slug === slug)
 		.map((newBlog) => (
 			<Row>
 				<Col>
 					<Row>
-						<img width="100%" height="410rem" src={newBlog.fields.heroImage.fields.file.url} alt="cheese and grapes"/>
+						<img width="100%" height="410rem" src={newBlog.heroImage} alt="cheese and grapes"/>
 					</Row>
 					<Row>
-						<h1> {newBlog.fields.title} </h1>
+						<h1> {newBlog.title} </h1>
 					</Row> 
 					
 					<Row>
-						<p> {newBlog.fields.author.fields.name} </p>
+						<p> {newBlog.author} </p>
 					</Row>
 					<Row>
-						<p> {newBlog.fields.publishDate} </p>
-						<div>{documentToReactComponents(newBlog.fields.blogContentRich)}</div>
-						<img width="45%" src={newBlog.fields.blogEntryImage.fields.file.url} alt="cheese board"/> 
+						<p> {newBlog.publishDate} </p>
+						<div>{newBlog.blogContentRich}</div>
+						<img width="45%" src={newBlog.blogEntryImage} alt="cheese board"/> 
 					</Row>
 					<Row>
-						<p>{newBlog.fields.tags}</p>
+						<p>Tags</p>
 					</Row>
 				</Col>
 			</Row>

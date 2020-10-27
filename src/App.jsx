@@ -34,12 +34,11 @@ const App = () => {
 
 	// get all blog posts (content_type = contentful) //
 	useEffect(() => {
-		client
-			.getEntries({ content_type: "blogPost" })
-			.then((response) => {
-				setBlogData(response.items);
-			})
-			.catch((error) => console.log("ERROR"));
+		fetch('http://localhost:3000/api/blogPost')
+			.then((res) => res.json())
+			.then((data) => setBlogData(data))
+			.catch((error) => console.log("ERROR FETCHING CHEESE")); 
+
 	}, []);
 
 	// get all persons (content_type = contentful) //
