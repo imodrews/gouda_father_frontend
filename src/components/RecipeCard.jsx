@@ -6,29 +6,29 @@ import Card from "react-bootstrap/Card";
 import Badge from "react-bootstrap/Badge";
 import "../css/RecipeLandingPage.css";
 
-const RecipeCard = ({ recipe }) => {
-	const {
+const RecipeCard = ({ recipes }) => {
+	/*const {
 		title,
 		shortDescription,
 		quickFacts,
 		featureImage,
 		slug,
-	} = recipe.fields;
+	} = recipes; */ 
 
 	return (
-		<Link to={`/recipes/${slug}`} id="cardlink">
+		<Link to={`/recipes/${recipes.slug}`} id="cardlink">
 			<Card id="homepageCards">
 				<Card.Img
 					variant="top"
-					src={featureImage.fields.file.url}
-					alt={`image of ${title}`}
+					src={recipes.featureImage}
+					alt={`image of ${recipes.title}`}
 				/>
 				<Card.Body>
-					<Card.Title key={title} id="lpTitle">{title}</Card.Title>
-					<Card.Text id="lpDescription">{shortDescription}</Card.Text>
+					<Card.Title key={recipes.title} id="lpTitle">{recipes.title}</Card.Title>
+					<Card.Text id="lpDescription">{recipes.shortDescription}</Card.Text>
 					<Card.Text>
-						{quickFacts.length >= 1 &&
-							quickFacts.map((quickFact, index) => (
+						{recipes.length >= 1 &&
+							recipes.quickFacts.map((quickFact, index) => (
 								<Badge variant="dark" key={index}>
 									{quickFact}
 								</Badge>
