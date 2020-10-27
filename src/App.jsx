@@ -26,12 +26,10 @@ const App = () => {
 
 	// get all recipes (content_type = contentful) //
 	useEffect(() => {
-		client
-			.getEntries({ content_type: "recipes" })
-			.then((response) => {
-				setRecipes(response.items);
-			})
-			.catch((error) => console.log("ERROR"));
+			fetch('http://localhost:3000/api/recipes')
+			.then((res) => res.json())
+			.then((data) => setRecipes(data))
+			.catch((error) => console.log("NO FOOD FOR YOU!"));
 	}, []);
 
 	// get all blog posts (content_type = contentful) //

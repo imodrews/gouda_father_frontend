@@ -7,19 +7,19 @@ import Button from "react-bootstrap/Button";
 import "../css/RecipeLandingPage.css";
 
 const LPRecipeCard = ({ recipe, history }) => {
-	const { title, slug, shortDescription, featureImage } = recipe.fields;
+	const { title, slug, shortDescription, featureImage } = recipe;
 
 	return (
-		<Link to={`/recipes/${slug}/`}>
+		<Link to={`/recipes/${recipe.slug}/`}>
 		<Card id="lpRecipeCard" >
 			<Card.Img
 				variant="top"
-				src={featureImage.fields.file.url}
+				src={recipe.featureImage}
 				alt="Card image cap"
 			/>
 			<Card.Body>
-				<Card.Title id="lpTitle">{title}</Card.Title>
-				<Card.Text id="lpDescription">{shortDescription}</Card.Text>
+				<Card.Title id="lpTitle">{recipe.title}</Card.Title>
+				<Card.Text id="lpDescription">{recipe.shortDescription}</Card.Text>
 				
 					
 			

@@ -11,11 +11,11 @@ const RecipeDetail = ({ recipes }) => {
 		<div>
 			{recipes.length >= 1 &&
 				recipes
-					.filter((recipe) => recipe.fields.slug === slug)
+					.filter((recipe) => recipe.slug === slug)
 					.map((recipe) => (
 						<div>
 							<Card.Title id= "recipeTitle">
-								<p>{recipe.fields.title}</p>
+								<p>{recipe.title}</p>
 							</Card.Title>
 
 							<Card id="recipeDetailCard">
@@ -24,21 +24,20 @@ const RecipeDetail = ({ recipes }) => {
 									width="40%"
 									height="50%"
 									src={
-										recipe.fields.featureImage.fields.file
-											.url
+										recipe.featureImage
 									}
 									alt="Card image cap"
 								/>
 
 								<p id="RPIngredients">Ingredients</p>
 								<Card.Text id="ingredients">
-									{recipe.fields.ingredients}
+									{recipe.ingredients}
 								</Card.Text>
 								<Card.Text>
 									<p id="RPMethod">Method</p>
 									<div id="RPmethodDetails">
 										{documentToReactComponents(
-											recipe.fields.description_recipes
+											recipe.description
 										)}
 									</div>
 								</Card.Text>
