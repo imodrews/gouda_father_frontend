@@ -12,7 +12,7 @@ const RecipeCards = ({ recipes }) => {
 			<CardGroup id="cardgroup">
 				{selected.length >= 1 &&
 					selected.map((recipe, index) => (
-						<RecipeCard recipes={recipes} key={index} />
+						<RecipeCard recipe={recipe} key={index} />
 					))}
 			</CardGroup>
 		</Container>

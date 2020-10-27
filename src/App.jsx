@@ -26,7 +26,7 @@ const App = () => {
 
 	// get all recipes (content_type = contentful) //
 	useEffect(() => {
-			fetch('http://localhost:3000/api/recipes')
+		fetch("http://localhost:3000/api/recipes")
 			.then((res) => res.json())
 			.then((data) => setRecipes(data))
 			.catch((error) => console.log("NO FOOD FOR YOU!"));
@@ -41,10 +41,10 @@ const App = () => {
 			})
 			.catch((error) => console.log("ERROR"));
 	}, []);
-	
+
 	// get all persons (content_type = contentful) //
 	useEffect(() => {
-		fetch('http://localhost:3000/api/authors')
+		fetch("http://localhost:3000/api/authors")
 			.then((res) => res.json())
 			.then((data) => setAuthors(data))
 			.catch((error) => console.log("ERROR FETCHING DATA"));
@@ -57,13 +57,12 @@ const App = () => {
 			</header>
 			<main>
 				<Switch>
-
 					<Route
 						path="/recipes/tag/:tags"
 						render={(props) => (
 							<RecipesLandingPage recipes={recipes} {...props} />
 						)}
-						/>
+					/>
 					<Route
 						path="/recipes/:slug"
 						render={(props) => (
