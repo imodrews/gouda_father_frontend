@@ -21,7 +21,7 @@ const BlogDetail = ({ blogData }) => {
 			<Row>
 				<Col>
 					<Row>
-						<img width="100%" height="410rem" src={newBlog.heroImage} alt="cheese and grapes"/>
+						<img width="100%" height="410rem" src={newBlog.heroimageurl} alt="cheese and grapes"/>
 					</Row>
 					<Row>
 						<h1> {newBlog.title} </h1>
@@ -31,9 +31,9 @@ const BlogDetail = ({ blogData }) => {
 						<p> {newBlog.author} </p>
 					</Row>
 					<Row>
-						<p> {newBlog.publishDate} </p>
-						<div>{newBlog.blogContentRich}</div>
-						<img width="45%" src={newBlog.blogEntryImage} alt="cheese board"/> 
+						<p> {newBlog.publishdate} </p>
+						<div>{newBlog.blogcontentrich}</div>
+						<img width="45%" src={newBlog.blogentryimage} alt="cheese board"/> 
 					</Row>
 					<Row>
 						<p>Tags</p>
