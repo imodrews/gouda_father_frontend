@@ -13,6 +13,7 @@ import BlogLandingPage from "./pages/BlogLandingPage";
 import AuthorDetail from "./pages/AuthorDetail";
 import BlogDetail from "./pages/BlogDetail";
 import RecipeDetail from "./pages/RecipeDetail";
+import AddRecipe from "./pages/AddRecipe";
 
 // importing components //
 import NavbarComponent from "./components/NavbarComponent";
@@ -80,6 +81,13 @@ const App = () => {
 							<BlogDetail blogData={blogData} {...props} />
 						)}
 					/>
+
+					<Route
+						path={"/add_recipe"}
+						render={(props) => (
+							<AddRecipe />
+						)}
+						/>
 					<Route
 						path="/recipes"
 						render={(props) => (

@@ -27,6 +27,7 @@ const NavbarComponent = () => {
 					<NavLink id="navmenu" to="/">Home</NavLink>
 					<NavLink id="navmenu" to="/recipes">Recipes</NavLink>
 					<NavLink id="navmenu" to="/blog">Blog</NavLink>
+					<NavLink id="navmenu" to="/add_recipe">Add Recipe</NavLink>
 				</Nav>
 			</Container>
 		</Navbar>
