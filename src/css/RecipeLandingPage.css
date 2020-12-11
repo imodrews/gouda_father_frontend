@@ -82,6 +82,7 @@
     font-family: 'Roboto', sans-serif;
     padding-left: 100px;
     font-size: 20px;
+    font-weight: bold;
     
 }
 
@@ -93,4 +94,19 @@
 
 }
 
+#homepageCards {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#navmenu {
+    font-weight: bold;
+}
+
+#quickfacts {
+    display: flex;
+    padding-left: 50px;
+}
 

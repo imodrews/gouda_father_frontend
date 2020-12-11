@@ -7,31 +7,31 @@ import Badge from "react-bootstrap/Badge";
 import "../css/RecipeLandingPage.css";
 
 const RecipeCard = ({ recipe }) => {
-	/*const {
-		title,
-		shortDescription,
-		quickFacts,
-		featureImage,
-		slug,
-	} = recipes; */ 
-	console.log(recipe)
+	// const {
+	// 	title,
+	// 	shortDescription,
+	// 	quickFacts,
+	// 	featureImage,
+	// 	slug,
+	// } = recipe; 
+	
 
 	return (
 
 		<Link to={`/recipes/${recipe.slug}`} id="cardlink">
 			<Card id="homepageCards">
-{/* 				<Card.Img
+				<Card.Img
 					variant="top"
-					src={recipes.featureImage}
-					alt={`image of ${recipes.title}`}
-				/> */}
+					src={recipe.imageurl}
+					alt={`image of ${recipe.title}`}
+				/>
 				<Card.Body>
 					<Card.Title key={recipe.title} id="lpTitle">{recipe.title}</Card.Title>
-					<Card.Text id="lpDescription">{recipe.shortDescription}</Card.Text>
+					<Card.Text id="lpDescription">{recipe.shortdescription}</Card.Text>
 					<Card.Text>
 						
 								<Badge variant="dark">
-									{recipe.quickFacts}
+									{recipe.quickfacts}
 								</Badge>
 							
 					</Card.Text>

@@ -21,7 +21,7 @@ const oldBlogPosts = sortedPublishedDateArray.slice(3, sortedPublishedDateArray.
 	return (
 		<Container>
 			<Jumbotron id="blogJumbotron" fluid>
-				<h1> The Chronicles of Cheese </h1>
+				<h1 id="theChronicalsofCheese"> The Chronicles of Cheese </h1>
 			</Jumbotron>
 		<Row>
 			<BlogEntryPreviews id="blogPreviewCards" blogData={blogData} newData={latestBlogPosts} />

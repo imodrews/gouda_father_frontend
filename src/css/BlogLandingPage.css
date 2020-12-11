@@ -36,3 +36,9 @@ h1 {
 	width: 20rem;
 	padding: none;
 }
+
+#theChronicalsofCheese {
+    font-family: 'Oswald', sans-serif;
+    padding-left: 40px;
+    font-size: 40px;
+}

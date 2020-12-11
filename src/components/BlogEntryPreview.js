@@ -7,11 +7,11 @@ import "../css/BlogLandingPage.css";
 
 const BlogEntryPreview = ({ preview, history }) => {
 	const {
-		title,
-		blogShortDescription,
-		date,
-		blogentryImage,
-		author,
+		// title,
+		// blogShortDescription,
+		// date,
+		// blogentryImage,
+		// author,
 		slug,
 	} = preview;
 

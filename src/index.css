@@ -23,7 +23,7 @@ code {
 #homepageCards {
 	max-width: 14rem;
 	border-radius: 2px;
-	height: 24rem;
+	height: 16rem;
 	float: center;
 	height: 22rem; 
 
@@ -69,6 +69,8 @@ code {
 }
 
 .footer {
+	display: flex;
+	justify-content: center;
 	margin-top: 1rem;
 }
 
@@ -154,4 +156,12 @@ h3 {
 #lpbutton {
 	margin: 10px 5px 20px 5px;
 
+}
+
+#madeWithLove {
+	color: white;
+}
+
+#authorButton {
+	color: white;
 }
