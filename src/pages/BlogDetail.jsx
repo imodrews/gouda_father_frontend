@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import "../css/BlogLandingPage.css";
+import image from '../images/goudafather.jpg'
 
 const BlogDetail = ({ blogData }) => {
 	const { slug } = useParams();
@@ -19,25 +20,21 @@ const BlogDetail = ({ blogData }) => {
 		.filter((newBlog) => newBlog.slug === slug)
 		.map((newBlog) => (
 			<Row>
-				<Col>
+				<Col id='blogPosition'>
+					
 					<Row>
-						<img width="100%" height="410rem" src={newBlog.heroimageurl} alt="cheese and grapes"/>
-					</Row>
-					<Row>
-						<h1> {newBlog.title} </h1>
+						<h1 id='blogTitle'> {newBlog.title} </h1>
 					</Row> 
 					
 					<Row>
-						<p> {newBlog.author} </p>
+						<p> By {newBlog.author} </p>
 					</Row>
-					<Row>
+					<Row id='blogContentPosition'>
 						<p> {newBlog.publishdate} </p>
-						<div>{newBlog.blogcontentrich}</div>
-						<img width="45%" src={newBlog.blogentryimage} alt="cheese board"/> 
+						<div id='blogArticle'>{newBlog.blogcontentrich}</div>
+						<img width="30%" src={newBlog.blogentryimage} alt="cheese board"/> 
 					</Row>
-					<Row>
-						<p>Tags</p>
-					</Row>
+					
 				</Col>
 			</Row>
 		))}

@@ -6,6 +6,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Image from "react-bootstrap/Image";
 
+import "../css/RecipeLandingPage.css";
+
 import logo from "../images/logo.png";
 
 const NavbarComponent = () => {

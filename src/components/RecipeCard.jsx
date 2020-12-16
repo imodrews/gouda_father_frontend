@@ -7,13 +7,6 @@ import Badge from "react-bootstrap/Badge";
 import "../css/RecipeLandingPage.css";
 
 const RecipeCard = ({ recipe }) => {
-	// const {
-	// 	title,
-	// 	shortDescription,
-	// 	quickFacts,
-	// 	featureImage,
-	// 	slug,
-	// } = recipe; 
 	
 
 	return (
@@ -30,7 +23,7 @@ const RecipeCard = ({ recipe }) => {
 					<Card.Text id="lpDescription">{recipe.shortdescription}</Card.Text>
 					<Card.Text>
 						
-								<Badge variant="dark">
+								<Badge variant="dark" id="quickfacts">
 									{recipe.quickfacts}
 								</Badge>
 							

@@ -9,14 +9,16 @@ h1 {
 	padding-left: 5rem;
 }
 
+
 #blogJumbotron {
-	background-image: url(../images/Ratattouille.jpg);
+	background-image: url(../images/goudafather.jpg);
 	width: 70rem;
 }
 
 #oldblogbutton {
 	width: 20rem;
 	height: 15%;
+	font-weight: bold;
 }
 
 #detailBody{
@@ -26,19 +28,76 @@ h1 {
 #blogPreviewCards {
 	display: flex;
 	flex-direction: row;
-	
 	width: 5rem;
+	justify-content: center;
 }
 #blogPreviewCard{
 	width: 20rem;
+	height: 25rem;
 }
 #oldBlogCard{
+	
 	width: 20rem;
-	padding: none;
+	padding: 10px;
+	margin: 20px;
 }
 
 #theChronicalsofCheese {
     font-family: 'Oswald', sans-serif;
-    padding-left: 40px;
-    font-size: 40px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 40px;
+	color: white;
+	font-weight: bold;
+	background: transparent;
+	
+	
+}
+
+#blTitle {
+	
+		text-decoration: none;
+		text-align: center;
+		color: black;
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
+	
+}
+
+#bpButton {
+	margin: 10px;
+}
+
+#bpButtonContainer {
+	display: flex;
+	justify-content: center;
+}
+
+#olderBlogsPosition {
+	display: flex;
+	justify-content: center;
+}
+
+#blogTitle {
+		color: white;
+		text-align: center;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-weight: bold;
+}
+
+#blogPosition {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+#blogContentPosition {
+	display: flex;
+	justify-content: center;
+}
+
+#blogArticle {
+	margin: 30px;
 }
