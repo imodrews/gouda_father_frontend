@@ -27,7 +27,7 @@ const App = () => {
 
 	// get all recipes (content_type = contentful) //
 	useEffect(() => {
-		fetch('/api')
+		fetch('https://gouda-father-backend.herokuapp.com/api/recipes')
 			.then((res) => res.json())
 			.then((data) => setRecipes(data))
 			.catch((error) => console.log("NO FOOD FOR YOU!"));
@@ -35,7 +35,7 @@ const App = () => {
 
 	// get all blog posts (content_type = contentful) //
 	useEffect(() => {
-		fetch('/api/api/blogPost')
+		fetch('https://gouda-father-backend.herokuapp.com/api/blogPost')
 			.then((res) => res.json())
 			.then((data) => setBlogData(data))
 			.catch((error) => console.log("ERROR FETCHING CHEESE")); 
@@ -44,7 +44,7 @@ const App = () => {
 
 	// get all persons (content_type = contentful) //
 	useEffect(() => {
-		fetch("/api/api/authors")
+		fetch("https://gouda-father-backend.herokuapp.com/api/authors")
 			.then((res) => res.json())
 			.then((data) => setAuthors(data))
 			.catch((error) => console.log("ERROR FETCHING DATA"));
